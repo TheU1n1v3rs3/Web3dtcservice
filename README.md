@@ -116,7 +116,7 @@ ipfs add -r dtcservice/
 
 ```html
 <!-- E-posta adresini güncelleyin -->
-<p><i class="fas fa-envelope"></i> info@dtcservice.x</p>
+<p><i class="fas fa-envelope"></i> info@dtcservice.u</p>
 
 <!-- Telefon numarasını güncelleyin -->
 <p><i class="fas fa-phone"></i> +90 XXX XXX XX XX</p>
@@ -334,7 +334,7 @@ pg_dump database_name > backup.sql
 - Yeni özellik eklemeleri
 
 ### İletişim
-- **E-posta:** info@dtcservice.x
+- **E-posta:** info@dtcservice.u
 - **Telefon:** +90 XXX XXX XX XX
 - **GitHub:** https://github.com/dtcservice
 

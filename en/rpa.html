@@ -60,50 +60,70 @@
     </nav>
 
     <!-- Service Hero (from TR first half, translated) -->
-    <section class="service-hero">
+    <section class="service-hero rpa-hero">
         <div class="container">
             <div class="service-hero-content">
                 <div class="breadcrumb">
                     <a href="index.html">Home</a> > <span>RPA Automation</span>
                 </div>
-                <h1>RPA (Robotic Process Automation)</h1>
+                <h1 class="rpa-hero-title">RPA (Robotic Process Automation)</h1>
                 <p class="hero-subtitle">Automate your business processes with smart bots and boost efficiency</p>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <div class="stat-number">80%</div>
-                        <div class="stat-label">Cost Reduction</div>
+                <div class="hero-stats-cards">
+                    <div class="hero-stat-card">
+                        <div class="hero-stat-icon"><i class="fas fa-coins"></i></div>
+                        <div class="hero-stat-value">80%</div>
+                        <div class="hero-stat-label">Cost Reduction</div>
                     </div>
-                    <div class="stat">
-                        <div class="stat-number">90%</div>
-                        <div class="stat-label">Error Reduction</div>
+                    <div class="hero-stat-card">
+                        <div class="hero-stat-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="hero-stat-value">90%</div>
+                        <div class="hero-stat-label">Error Reduction</div>
                     </div>
-                    <div class="stat">
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label">Continuous Operation</div>
+                    <div class="hero-stat-card">
+                        <div class="hero-stat-icon"><i class="fas fa-clock"></i></div>
+                        <div class="hero-stat-value">24/7</div>
+                        <div class="hero-stat-label">Continuous Operation</div>
                     </div>
                 </div>
             </div>
             <div class="service-hero-visual">
-                <div class="rpa-animation">
-                    <div class="bot-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="process-flow">
-                        <div class="process-step">
-                            <i class="fas fa-file-alt"></i>
-                            <span>Data Capture</span>
-                        </div>
-                        <div class="arrow">→</div>
-                        <div class="process-step">
-                            <i class="fas fa-cogs"></i>
-                            <span>Processing</span>
-                        </div>
-                        <div class="arrow">→</div>
-                        <div class="process-step">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Result</span>
-                        </div>
-                    </div>
+                <div class="rpa-flow">
+                    <svg viewBox="0 0 500 220" class="rpa-flow-svg" preserveAspectRatio="xMidYMid meet">
+                        <defs>
+                            <linearGradient id="rpaPathGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#6366f1" />
+                                <stop offset="100%" stop-color="#8b5cf6" />
+                            </linearGradient>
+                        </defs>
+                        <path class="rpa-flow-path" d="M40 180 C140 40, 220 40, 260 120 S380 200, 460 60" stroke="url(#rpaPathGrad)" stroke-width="6" fill="none" stroke-linecap="round" />
+                        <g class="rpa-node" transform="translate(40,180)">
+                            <circle r="32" class="rpa-node-bg" />
+                            <foreignObject x="-26" y="-18" width="52" height="36">
+                                <div class="rpa-node-content">
+                                    <i class="fas fa-file-alt"></i>
+                                    <span>Data<br/>Capture</span>
+                                </div>
+                            </foreignObject>
+                        </g>
+                        <g class="rpa-node" transform="translate(260,120)">
+                            <circle r="32" class="rpa-node-bg" />
+                            <foreignObject x="-26" y="-18" width="52" height="36">
+                                <div class="rpa-node-content">
+                                    <i class="fas fa-cogs"></i>
+                                    <span>Processing</span>
+                                </div>
+                            </foreignObject>
+                        </g>
+                        <g class="rpa-node" transform="translate(460,60)">
+                            <circle r="32" class="rpa-node-bg" />
+                            <foreignObject x="-26" y="-18" width="52" height="36">
+                                <div class="rpa-node-content">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Result</span>
+                                </div>
+                            </foreignObject>
+                        </g>
+                    </svg>
                 </div>
             </div>
         </div>
@@ -165,7 +185,7 @@
     </section>
 
     <!-- RPA Implementation Process (TR 6-step version translated) -->
-    <section class="section-padding">
+    <section class="section-padding timeline-path">
         <div class="container">
             <div class="section-header">
                 <h2>Our RPA Implementation Process</h2>
@@ -338,12 +358,12 @@
         </div>
     </section>
 
-    <!-- Technologies (TR structure translated, 6 items) -->
-    <section class="section-padding bg-light">
+    <!-- Technologies (richer content) -->
+    <section class="section-padding bg-light rpa-tech">
         <div class="container">
             <div class="section-header">
                 <h2>Technologies We Use</h2>
-                <p>We deliver the best results with industry-leading tools</p>
+                <p>We choose the right tool for the job and build scalable, governable automations</p>
             </div>
             
             <div class="tech-grid">
@@ -352,7 +372,17 @@
                         <i class="fas fa-robot"></i>
                     </div>
                     <h3>UiPath</h3>
-                    <p>Comprehensive RPA platform for complex automations</p>
+                    <p>Enterprise orchestration with attended/unattended bot management</p>
+                    <div class="tech-badges">
+                        <span class="tag">Orchestrator</span>
+                        <span class="tag">On‑prem/Cloud</span>
+                        <span class="tag">Citrix/SAP</span>
+                    </div>
+                    <ul class="tech-points">
+                        <li>Complex workflows with strong governance</li>
+                        <li>Scale in regulated environments</li>
+                    </ul>
+                    <small class="tech-note">Best for: Large scale, strict governance</small>
                 </div>
                 
                 <div class="tech-card">
@@ -360,7 +390,17 @@
                         <i class="fas fa-microchip"></i>
                     </div>
                     <h3>Automation Anywhere</h3>
-                    <p>Cloud-based intelligent automation solutions</p>
+                    <p>Cloud‑native architecture for fast rollout and elastic scaling</p>
+                    <div class="tech-badges">
+                        <span class="tag">Cloud‑native</span>
+                        <span class="tag">Bot Insight</span>
+                        <span class="tag">AARI</span>
+                    </div>
+                    <ul class="tech-points">
+                        <li>Ideal for cloud‑first organizations</li>
+                        <li>Quick deployment, low maintenance</li>
+                    </ul>
+                    <small class="tech-note">Best for: Managed cloud, quick start</small>
                 </div>
                 
                 <div class="tech-card">
@@ -368,15 +408,35 @@
                         <i class="fas fa-cogs"></i>
                     </div>
                     <h3>Blue Prism</h3>
-                    <p>Enterprise-grade secure RPA implementations</p>
+                    <p>Strong security and governance for enterprise RPA</p>
+                    <div class="tech-badges">
+                        <span class="tag">Governance</span>
+                        <span class="tag">Object Studio</span>
+                        <span class="tag">Security</span>
+                    </div>
+                    <ul class="tech-points">
+                        <li>Highly regulated industries (banking, insurance)</li>
+                        <li>Durable, long‑lived bot ecosystems</li>
+                    </ul>
+                    <small class="tech-note">Best for: Security and auditability</small>
                 </div>
                 
                 <div class="tech-card">
                     <div class="tech-logo">
                         <i class="fab fa-python"></i>
                     </div>
-                    <h3>Python Selenium</h3>
-                    <p>Custom automation solutions for unique needs</p>
+                    <h3>Python + Selenium</h3>
+                    <p>Flexible and cost‑effective automations for custom needs</p>
+                    <div class="tech-badges">
+                        <span class="tag">Open‑source</span>
+                        <span class="tag">Web UI</span>
+                        <span class="tag">Custom</span>
+                    </div>
+                    <ul class="tech-points">
+                        <li>Niche integrations, web automation</li>
+                        <li>Cost‑sensitive projects</li>
+                    </ul>
+                    <small class="tech-note">Best for: Flexibility, special requirements</small>
                 </div>
                 
                 <div class="tech-card">
@@ -384,15 +444,35 @@
                         <i class="fas fa-laptop-code"></i>
                     </div>
                     <h3>Power Automate</h3>
-                    <p>Microsoft ecosystem workflows and integrations</p>
+                    <p>Low‑code workflows inside the Microsoft 365 ecosystem</p>
+                    <div class="tech-badges">
+                        <span class="tag">M365</span>
+                        <span class="tag">Low‑code</span>
+                        <span class="tag">Connectors</span>
+                    </div>
+                    <ul class="tech-points">
+                        <li>SharePoint, Teams, Outlook integrations</li>
+                        <li>Rapid departmental automations</li>
+                    </ul>
+                    <small class="tech-note">Best for: Microsoft‑centric stacks</small>
                 </div>
                 
                 <div class="tech-card">
                     <div class="tech-logo">
                         <i class="fas fa-eye"></i>
                     </div>
-                    <h3>Computer Vision</h3>
-                    <p>Advanced automation with image recognition</p>
+                    <h3>Computer Vision / OCR</h3>
+                    <p>High‑accuracy document and screen‑based automations</p>
+                    <div class="tech-badges">
+                        <span class="tag">OCR</span>
+                        <span class="tag">Document AI</span>
+                        <span class="tag">PDF/Image</span>
+                    </div>
+                    <ul class="tech-points">
+                        <li>Invoice/receipt OCR, semi‑structured data</li>
+                        <li>Screen automation and legacy systems</li>
+                    </ul>
+                    <small class="tech-note">Best for: Irregular documents</small>
                 </div>
             </div>
         </div>
@@ -548,7 +628,7 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p><i class="fas fa-envelope"></i> info@dtcservice.x</p>
+                    <p><i class="fas fa-envelope"></i> info@dtcservice.u</p>
                     <p><i class="fas fa-phone"></i> +90 XXX XXX XX XX</p>
                 </div>
             </div>

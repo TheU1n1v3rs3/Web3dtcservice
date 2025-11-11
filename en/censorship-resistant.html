@@ -67,79 +67,80 @@
                     <a href="index.html">Home</a> / <span>Censorship-Resistant Website</span>
                 </div>
                 <h1>Censorship-Resistant Websites</h1>
-                <p>Build unstoppable websites using decentralized technologies. IPFS, Arweave, and blockchain hosting solutions that ensure your content remains accessible forever.</p>
+                <p class="hero-subtitle">Build unstoppable websites using decentralized technologies. IPFS, Arweave, and blockchain hosting solutions that ensure your content remains accessible forever.</p>
                 <div class="hero-stats">
                     <div class="stat">
                         <span class="stat-number">100%</span>
-                        <span class="stat-text">Uptime</span>
+                        <span class="stat-label">Uptime</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">0</span>
-                        <span class="stat-text">Censorship</span>
+                        <span class="stat-label">Censorship</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">∞</span>
-                        <span class="stat-text">Permanence</span>
+                        <span class="stat-label">Permanence</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Censorship Resistance -->
-    <section class="service-section">
+    <!-- Why Censorship Resistant (styled like TR) -->
+    <section class="section-padding">
         <div class="container">
-            <div class="service-content">
+            <div class="content-grid">
                 <div class="content-text">
-                    <h2>Why Censorship-Resistant Websites?</h2>
-                    <p>Traditional websites can be taken down by governments, hosting providers, or domain registrars. Censorship-resistant websites use decentralized infrastructure to ensure your content remains accessible no matter what.</p>
+                    <h2>Why Censorship‑Resistant Websites?</h2>
+                    <p>Internet censorship, server shutdowns, and domain blocks are increasing. Traditional web hosting relies on a single centralized point, making it vulnerable to these risks. Censorship‑resistant sites use decentralized technologies to eliminate these problems entirely.</p>
                     
-                    <div class="threat-scenarios">
-                        <h3>Common Censorship Threats:</h3>
-                        <div class="threats-grid">
-                            <div class="threat-item">
-                                <i class="fas fa-ban"></i>
-                                <h4>Government Blocking</h4>
-                                <p>Authorities can block access to your website</p>
+                    <div class="censorship-problems">
+                        <div class="problem-item">
+                            <i class="fas fa-ban"></i>
+                            <div>
+                                <h4>Internet Censorship</h4>
+                                <p>Governments and ISPs can block your websites</p>
                             </div>
-                            <div class="threat-item">
-                                <i class="fas fa-server"></i>
-                                <h4>Hosting Shutdown</h4>
-                                <p>Hosting providers can terminate your account</p>
+                        </div>
+                        <div class="problem-item">
+                            <i class="fas fa-server"></i>
+                            <div>
+                                <h4>Server Shutdowns</h4>
+                                <p>Hosting companies can take your site down under pressure</p>
                             </div>
-                            <div class="threat-item">
-                                <i class="fas fa-globe"></i>
-                                <h4>Domain Seizure</h4>
-                                <p>Domain registrars can revoke your domain</p>
+                        </div>
+                        <div class="problem-item">
+                            <i class="fas fa-globe-slash"></i>
+                            <div>
+                                <h4>Domain Blocking</h4>
+                                <p>DNS‑level blocks can cut off access to your site</p>
                             </div>
-                            <div class="threat-item">
-                                <i class="fas fa-shield-alt"></i>
-                                <h4>DDoS Attacks</h4>
-                                <p>Coordinated attacks can take down centralized sites</p>
+                        </div>
+                        <div class="problem-item">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div>
+                                <h4>Single Point of Failure</h4>
+                                <p>A centralized setup can bring the whole system down with one failure</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="content-visual">
-                    <div class="architecture-diagram">
-                        <div class="arch-layer traditional">
-                            <h4>Traditional Website</h4>
-                            <div class="single-point">
-                                <i class="fas fa-server"></i>
-                                <span>Single Point of Failure</span>
-                            </div>
+                    <div class="solution-showcase">
+                        <div class="solution-item">
+                            <i class="fas fa-network-wired"></i>
+                            <h4>Distributed Network</h4>
+                            <p>Hosted across thousands of nodes</p>
                         </div>
-                        <div class="vs-divider">VS</div>
-                        <div class="arch-layer decentralized">
-                            <h4>Decentralized Website</h4>
-                            <div class="distributed-network">
-                                <div class="node"><i class="fas fa-circle"></i></div>
-                                <div class="node"><i class="fas fa-circle"></i></div>
-                                <div class="node"><i class="fas fa-circle"></i></div>
-                                <div class="node"><i class="fas fa-circle"></i></div>
-                                <div class="node"><i class="fas fa-circle"></i></div>
-                            </div>
-                            <span>Distributed Network</span>
+                        <div class="solution-item">
+                            <i class="fas fa-lock"></i>
+                            <h4>Cryptographic Security</h4>
+                            <p>Content‑addressed, verifiable files</p>
+                        </div>
+                        <div class="solution-item">
+                            <i class="fas fa-infinity"></i>
+                            <h4>Permanent Storage</h4>
+                            <p>Once uploaded, preserved for the long term</p>
                         </div>
                     </div>
                 </div>
@@ -147,167 +148,130 @@
         </div>
     </section>
 
-    <!-- Technologies -->
-    <section class="technologies-section">
+    <!-- Technologies (Unified service-tech cards) -->
+    <section class="section-padding bg-light service-tech">
         <div class="container">
-            <h2>Decentralized Hosting Technologies</h2>
-            <div class="tech-tabs">
-                <div class="tab-buttons">
-                    <button class="tab-btn active" data-tab="ipfs">IPFS</button>
-                    <button class="tab-btn" data-tab="arweave">Arweave</button>
-                    <button class="tab-btn" data-tab="tor">Tor Hidden Service</button>
-                    <button class="tab-btn" data-tab="blockchain">Blockchain Storage</button>
+            <div class="section-header">
+                <h2>Technologies We Use</h2>
+                <p>We protect your website using the most capable decentralized technologies</p>
+            </div>
+            <div class="tech-solutions tech-grid">
+                <div class="tech-solution featured tech-card">
+                    <div class="tech-header">
+                        <div class="tech-logo"><i class="fas fa-cube"></i></div>
+                        <h3>IPFS (InterPlanetary File System)</h3>
+                        <div class="tech-badge">Most Popular</div>
+                    </div>
+                    <div class="tech-content">
+                        <p>Content‑addressed, peer‑to‑peer distributed file system. Your site is replicated across thousands of nodes.</p>
+                        <div class="tech-features">
+                            <div class="feature-list">
+                                <div class="feature"><i class="fas fa-check"></i> Content‑based addressing</div>
+                                <div class="feature"><i class="fas fa-check"></i> Automatic deduplication</div>
+                                <div class="feature"><i class="fas fa-check"></i> Version control</div>
+                                <div class="feature"><i class="fas fa-check"></i> Fast synchronization</div>
+                                <div class="feature"><i class="fas fa-check"></i> Gateway support</div>
+                            </div>
+                        </div>
+                        <div class="tech-stats">
+                            <div class="stat"><span class="stat-number">200K+</span><span class="stat-label">Active Nodes</span></div>
+                            <div class="stat"><span class="stat-number">99.9%</span><span class="stat-label">Uptime</span></div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="tab-content">
-                    <div class="tab-pane active" id="ipfs">
-                        <div class="tech-content">
-                            <div class="tech-info">
-                                <h3>IPFS (InterPlanetary File System)</h3>
-                                <p>A distributed file system that creates a permanent and decentralized method of storing and sharing files.</p>
-                                
-                                <div class="tech-features">
-                                    <h4>Key Features:</h4>
-                                    <ul>
-                                        <li><i class="fas fa-check"></i> Content-addressed storage</li>
-                                        <li><i class="fas fa-check"></i> Automatic deduplication</li>
-                                        <li><i class="fas fa-check"></i> Peer-to-peer distribution</li>
-                                        <li><i class="fas fa-check"></i> Version control</li>
-                                        <li><i class="fas fa-check"></i> Offline accessibility</li>
-                                    </ul>
-                                </div>
-
-                                <div class="use-case">
-                                    <h4>Best For:</h4>
-                                    <p>Static websites, blogs, documentation, and content that needs global distribution without central servers.</p>
-                                </div>
+                <div class="tech-solution tech-card">
+                    <div class="tech-header">
+                        <div class="tech-logo"><i class="fas fa-archive"></i></div>
+                        <h3>Arweave Permanent Storage</h3>
+                    </div>
+                    <div class="tech-content">
+                        <p>Blockchain‑based permanent data storage. Pay once; your content persists for decades.</p>
+                        <div class="tech-features">
+                            <div class="feature-list">
+                                <div class="feature"><i class="fas fa-check"></i> 200+ year durability</div>
+                                <div class="feature"><i class="fas fa-check"></i> One‑time payment</div>
+                                <div class="feature"><i class="fas fa-check"></i> Immutable storage</div>
+                                <div class="feature"><i class="fas fa-check"></i> Smart contract integration</div>
+                                <div class="feature"><i class="fas fa-check"></i> Proof of access</div>
                             </div>
-                            <div class="tech-diagram">
-                                <div class="ipfs-network">
-                                    <div class="central-content">
-                                        <i class="fas fa-file-code"></i>
-                                        <span>Your Website</span>
-                                    </div>
-                                    <div class="peer-nodes">
-                                        <div class="peer"><i class="fas fa-desktop"></i></div>
-                                        <div class="peer"><i class="fas fa-laptop"></i></div>
-                                        <div class="peer"><i class="fas fa-mobile-alt"></i></div>
-                                        <div class="peer"><i class="fas fa-server"></i></div>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="tech-pricing"><span class="price">~$5</span><span class="price-unit"> per GB (lifetime)</span></div>
+                    </div>
+                </div>
+
+                <div class="tech-solution tech-card">
+                    <div class="tech-header">
+                        <div class="tech-logo"><i class="fas fa-user-secret"></i></div>
+                        <h3>Tor Hidden Services</h3>
+                    </div>
+                    <div class="tech-content">
+                        <p>Onion routing for fully anonymous and censorship‑resistant .onion websites.</p>
+                        <div class="tech-features">
+                            <div class="feature-list">
+                                <div class="feature"><i class="fas fa-check"></i> End‑to‑end encryption</div>
+                                <div class="feature"><i class="fas fa-check"></i> IP obfuscation</div>
+                                <div class="feature"><i class="fas fa-check"></i> Multi‑layer routing</div>
+                                <div class="feature"><i class="fas fa-check"></i> .onion domains</div>
+                                <div class="feature"><i class="fas fa-check"></i> Full anonymity</div>
+                            </div>
+                        </div>
+                        <div class="tech-usage"><span class="usage-stat">2M+ daily users</span></div>
+                    </div>
+                </div>
+
+                <div class="tech-solution tech-card">
+                    <div class="tech-header">
+                        <div class="tech-logo"><i class="fas fa-satellite"></i></div>
+                        <h3>Skynet by Sia</h3>
+                    </div>
+                    <div class="tech-content">
+                        <p>Decentralized content delivery network with fast access and high availability.</p>
+                        <div class="tech-features">
+                            <div class="feature-list">
+                                <div class="feature"><i class="fas fa-check"></i> CDN‑like performance</div>
+                                <div class="feature"><i class="fas fa-check"></i> Portability</div>
+                                <div class="feature"><i class="fas fa-check"></i> Developer‑friendly API</div>
+                                <div class="feature"><i class="fas fa-check"></i> Skylink addressing</div>
+                                <div class="feature"><i class="fas fa-check"></i> Backup & redundancy</div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="tab-pane" id="arweave">
-                        <div class="tech-content">
-                            <div class="tech-info">
-                                <h3>Arweave (Permanent Storage)</h3>
-                                <p>A blockchain-based storage network that provides permanent data storage with a one-time payment model.</p>
-                                
-                                <div class="tech-features">
-                                    <h4>Key Features:</h4>
-                                    <ul>
-                                        <li><i class="fas fa-check"></i> Permanent storage (200+ years)</li>
-                                        <li><i class="fas fa-check"></i> One-time payment</li>
-                                        <li><i class="fas fa-check"></i> Immutable data</li>
-                                        <li><i class="fas fa-check"></i> Economic incentives</li>
-                                        <li><i class="fas fa-check"></i> Global replication</li>
-                                    </ul>
-                                </div>
-
-                                <div class="use-case">
-                                    <h4>Best For:</h4>
-                                    <p>Critical documents, historical records, NFT metadata, and content that must never disappear.</p>
-                                </div>
-                            </div>
-                            <div class="tech-diagram">
-                                <div class="arweave-network">
-                                    <div class="blockchain-chain">
-                                        <div class="block"><i class="fas fa-cube"></i></div>
-                                        <div class="block"><i class="fas fa-cube"></i></div>
-                                        <div class="block"><i class="fas fa-cube"></i></div>
-                                        <div class="block highlight"><i class="fas fa-file"></i></div>
-                                    </div>
-                                    <span>Permanent Blockchain Storage</span>
-                                </div>
+                <div class="tech-solution tech-card">
+                    <div class="tech-header">
+                        <div class="tech-logo"><i class="fas fa-layer-group"></i></div>
+                        <h3>Filecoin Storage</h3>
+                    </div>
+                    <div class="tech-content">
+                        <p>Incentivized storage network built on IPFS for guaranteed content persistence.</p>
+                        <div class="tech-features">
+                            <div class="feature-list">
+                                <div class="feature"><i class="fas fa-check"></i> Incentivized hosting</div>
+                                <div class="feature"><i class="fas fa-check"></i> Proof of storage</div>
+                                <div class="feature"><i class="fas fa-check"></i> Competitive pricing</div>
+                                <div class="feature"><i class="fas fa-check"></i> Smart contracts</div>
+                                <div class="feature"><i class="fas fa-check"></i> Global network</div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="tab-pane" id="tor">
-                        <div class="tech-content">
-                            <div class="tech-info">
-                                <h3>Tor Hidden Services</h3>
-                                <p>Access your website through the Tor network for maximum privacy and censorship resistance.</p>
-                                
-                                <div class="tech-features">
-                                    <h4>Key Features:</h4>
-                                    <ul>
-                                        <li><i class="fas fa-check"></i> Complete anonymity</li>
-                                        <li><i class="fas fa-check"></i> Onion routing</li>
-                                        <li><i class="fas fa-check"></i> End-to-end encryption</li>
-                                        <li><i class="fas fa-check"></i> No central servers</li>
-                                        <li><i class="fas fa-check"></i> Government-proof</li>
-                                    </ul>
-                                </div>
-
-                                <div class="use-case">
-                                    <h4>Best For:</h4>
-                                    <p>Whistleblowing platforms, journalism, activism, and sensitive communications requiring maximum privacy.</p>
-                                </div>
-                            </div>
-                            <div class="tech-diagram">
-                                <div class="tor-network">
-                                    <div class="tor-path">
-                                        <div class="tor-node">Entry</div>
-                                        <div class="arrow">→</div>
-                                        <div class="tor-node">Middle</div>
-                                        <div class="arrow">→</div>
-                                        <div class="tor-node">Exit</div>
-                                        <div class="arrow">→</div>
-                                        <div class="hidden-service">.onion</div>
-                                    </div>
-                                    <span>Encrypted Anonymous Path</span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="tech-solution tech-card">
+                    <div class="tech-header">
+                        <div class="tech-logo"><i class="fas fa-broadcast-tower"></i></div>
+                        <h3>Gun.js P2P Database</h3>
                     </div>
-
-                    <div class="tab-pane" id="blockchain">
-                        <div class="tech-content">
-                            <div class="tech-info">
-                                <h3>Blockchain Storage</h3>
-                                <p>Store your website directly on blockchain networks for ultimate immutability and decentralization.</p>
-                                
-                                <div class="tech-features">
-                                    <h4>Key Features:</h4>
-                                    <ul>
-                                        <li><i class="fas fa-check"></i> Immutable storage</li>
-                                        <li><i class="fas fa-check"></i> Smart contract integration</li>
-                                        <li><i class="fas fa-check"></i> Decentralized governance</li>
-                                        <li><i class="fas fa-check"></i> Cryptographic security</li>
-                                        <li><i class="fas fa-check"></i> Global consensus</li>
-                                    </ul>
-                                </div>
-
-                                <div class="use-case">
-                                    <h4>Best For:</h4>
-                                    <p>DApps, smart contract frontends, DAOs, and applications requiring blockchain integration.</p>
-                                </div>
-                            </div>
-                            <div class="tech-diagram">
-                                <div class="blockchain-storage">
-                                    <div class="smart-contract">
-                                        <i class="fas fa-file-contract"></i>
-                                        <span>Smart Contract</span>
-                                    </div>
-                                    <div class="storage-network">
-                                        <div class="storage-node"><i class="fas fa-database"></i></div>
-                                        <div class="storage-node"><i class="fas fa-database"></i></div>
-                                        <div class="storage-node"><i class="fas fa-database"></i></div>
-                                    </div>
-                                </div>
+                    <div class="tech-content">
+                        <p>Peer‑to‑peer, realtime, distributed database for dynamic decentralized apps.</p>
+                        <div class="tech-features">
+                            <div class="feature-list">
+                                <div class="feature"><i class="fas fa-check"></i> Realtime sync</div>
+                                <div class="feature"><i class="fas fa-check"></i> Offline‑first</div>
+                                <div class="feature"><i class="fas fa-check"></i> End‑to‑end encryption</div>
+                                <div class="feature"><i class="fas fa-check"></i> Graph database</div>
+                                <div class="feature"><i class="fas fa-check"></i> Mesh networking</div>
                             </div>
                         </div>
                     </div>
@@ -316,53 +280,73 @@
         </div>
     </section>
 
-    <!-- Our Process -->
-    <section class="process-section">
+    <!-- Implementation Process (timeline-path) -->
+    <section class="section-padding bg-light timeline-path">
         <div class="container">
-            <h2>Censorship-Resistant Website Development Process</h2>
-            <div class="process-timeline">
-                <div class="process-step-card">
+            <div class="section-header">
+                <h2>Censorship‑Resistant Website Implementation</h2>
+                <p>Our end‑to‑end path to make your website unstoppable</p>
+            </div>
+            <div class="implementation-process process-timeline">
+                <div class="process-step">
                     <div class="step-number">1</div>
-                    <h3>Threat Assessment</h3>
-                    <p>We analyze your specific censorship risks and determine the best decentralized approach.</p>
-                    <ul>
-                        <li>Risk evaluation</li>
-                        <li>Platform selection</li>
-                        <li>Architecture planning</li>
-                    </ul>
+                    <div class="step-icon"><i class="fas fa-search"></i></div>
+                    <div class="step-content">
+                        <h3>Analysis & Planning</h3>
+                        <ul>
+                            <li>Needs assessment & traffic profile</li>
+                            <li>Censorship threat modeling</li>
+                            <li>Technology selection</li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="process-step-card">
+                <div class="process-step">
                     <div class="step-number">2</div>
-                    <h3>Decentralized Development</h3>
-                    <p>Build your website optimized for decentralized hosting and distribution.</p>
-                    <ul>
-                        <li>Static site optimization</li>
-                        <li>IPFS preparation</li>
-                        <li>Content distribution</li>
-                    </ul>
+                    <div class="step-icon"><i class="fas fa-network-wired"></i></div>
+                    <div class="step-content">
+                        <h3>Infrastructure Setup</h3>
+                        <ul>
+                            <li>IPFS node & pinning configuration</li>
+                            <li>Gateway setup & compatibility</li>
+                            <li>Tor hidden service (.onion)</li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="process-step-card">
+                <div class="process-step">
                     <div class="step-number">3</div>
-                    <h3>Multi-Platform Deployment</h3>
-                    <p>Deploy across multiple decentralized networks for maximum resilience.</p>
-                    <ul>
-                        <li>IPFS deployment</li>
-                        <li>Arweave storage</li>
-                        <li>Tor hidden service</li>
-                    </ul>
+                    <div class="step-icon"><i class="fas fa-upload"></i></div>
+                    <div class="step-content">
+                        <h3>Content Migration</h3>
+                        <ul>
+                            <li>Static optimization for decentralized hosting</li>
+                            <li>IPFS deployment & content addressing</li>
+                            <li>Web3 domain linking (ENS/others)</li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="process-step-card">
+                <div class="process-step">
                     <div class="step-number">4</div>
-                    <h3>Access & Monitoring</h3>
-                    <p>Set up multiple access methods and continuous availability monitoring.</p>
-                    <ul>
-                        <li>Gateway configuration</li>
-                        <li>Web3 domain linking</li>
-                        <li>Uptime monitoring</li>
-                    </ul>
+                    <div class="step-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="step-content">
+                        <h3>Testing & Optimization</h3>
+                        <ul>
+                            <li>Access tests from multiple networks</li>
+                            <li>Performance & latency improvements</li>
+                            <li>Redundancy across providers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="step-content">
+                        <h3>Go‑Live & Training</h3>
+                        <ul>
+                            <li>Production launch</li>
+                            <li>Admin & editorial training</li>
+                            <li>24/7 monitoring & support</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -505,7 +489,7 @@
                     <a href="index.html#contact" class="pricing-btn">Start Project</a>
                 </div>
                 
-                <div class="pricing-card popular">
+                <div class="pricing-card featured">
                     <div class="pricing-badge">Most Popular</div>
                     <div class="pricing-header">
                         <h3>Multi-Platform</h3>
@@ -630,7 +614,7 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p><i class="fas fa-envelope"></i> info@dtcservice.x</p>
+                    <p><i class="fas fa-envelope"></i> info@dtcservice.u</p>
                     <p><i class="fas fa-phone"></i> +90 XXX XXX XX XX</p>
                 </div>
             </div>

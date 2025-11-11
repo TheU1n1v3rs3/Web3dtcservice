@@ -150,3 +150,43 @@ document.querySelectorAll('.service-card, .use-case-card, .process-step-card').f
 });
 
 console.log('DTC Service website loaded successfully! 🚀');
+
+// Animated hero stats (count-up & reveal)
+const heroStats = document.querySelectorAll('.hero-stats .stat');
+const statObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const stat = entry.target;
+            stat.classList.add('visible');
+            const numberEl = stat.querySelector('.stat-number');
+            if (!numberEl) return;
+            const raw = numberEl.textContent.trim();
+            if (raw === '∞') return; // don't animate infinity
+            // Extract numeric part (supports %, + suffix etc.)
+            const isPercent = raw.endsWith('%');
+            const cleaned = raw.replace(/[^0-9]/g,'');
+            const target = parseInt(cleaned, 10);
+            if (isNaN(target)) return;
+            let current = 0;
+            const duration = 1500; // ms
+            const start = performance.now();
+            function tick(now) {
+                const progress = Math.min((now - start) / duration, 1);
+                current = Math.floor(progress * target);
+                numberEl.textContent = isPercent ? current + '%' : current + raw.replace(/[0-9]/g,'');
+                if (progress < 1) {
+                    requestAnimationFrame(tick);
+                } else {
+                    numberEl.textContent = raw; // ensure exact final
+                }
+            }
+            requestAnimationFrame(tick);
+            statObserver.unobserve(stat);
+        }
+    });
+}, { threshold: 0.3 });
+
+heroStats.forEach(stat => {
+    stat.setAttribute('data-animate','');
+    statObserver.observe(stat);
+});
