@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sansüre Dayanıklı Website - DTC Service</title>
+    <meta name="description" content="IPFS, Arweave ve Tor teknolojileri ile sansüre dayanıklı, merkezi olmayan web siteleri kurun.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h2>DTC<span class="highlight">.service</span></h2>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#services" class="nav-link">Hizmetler</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">İletişim</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Hero -->
+    <section class="service-hero censorship-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Ana Sayfa</a> > <span>Sansüre Dayanıklı Website</span>
+                </div>
+                <h1>Sansüre Dayanıklı Web Siteleri</h1>
+                <p class="hero-subtitle">Merkezi olmayan teknolojilerle hiçbir gücün engelleyemeyeceği web siteleri kurun</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Merkezi Olmayan</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Uptime Garanti</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Sansür Riski</div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-hero-visual">
+                <div class="decentralized-network">
+                    <div class="network-nodes">
+                        <div class="node active"></div>
+                        <div class="node active"></div>
+                        <div class="node active"></div>
+                        <div class="node active"></div>
+                        <div class="node active"></div>
+                        <div class="node active"></div>
+                    </div>
+                    <div class="network-connections">
+                        <div class="connection"></div>
+                        <div class="connection"></div>
+                        <div class="connection"></div>
+                        <div class="connection"></div>
+                    </div>
+                    <div class="shield-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Censorship Resistant -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-text">
+                    <h2>Neden Sansüre Dayanıklı Website?</h2>
+                    <p>Günümüzde internet sansürü, server kapatmaları ve domain engellemeleri giderek artıyor. Geleneksel web hosting hizmetleri tek bir merkezi noktada olduğu için bu risklere açıktır. Sansüre dayanıklı web siteleri ise merkezi olmayan teknolojiler kullanarak bu sorunları tamamen ortadan kaldırır.</p>
+                    
+                    <div class="censorship-problems">
+                        <div class="problem-item">
+                            <i class="fas fa-ban"></i>
+                            <div>
+                                <h4>İnternet Sansürü</h4>
+                                <p>Hükümetler ve ISP'ler web sitelerinizi engelleyebilir</p>
+                            </div>
+                        </div>
+                        <div class="problem-item">
+                            <i class="fas fa-server"></i>
+                            <div>
+                                <h4>Server Kapatmaları</h4>
+                                <p>Hosting şirketleri baskı altında sitelerinizi kapatabilir</p>
+                            </div>
+                        </div>
+                        <div class="problem-item">
+                            <i class="fas fa-globe-slash"></i>
+                            <div>
+                                <h4>Domain Engellemeleri</h4>
+                                <p>DNS seviyesinde engellemeler sitenize erişimi kapatabilir</p>
+                            </div>
+                        </div>
+                        <div class="problem-item">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div>
+                                <h4>Tek Nokta Arızası</h4>
+                                <p>Merkezi yapı tek bir arızada tüm sistemi çökertebilir</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-visual">
+                    <div class="solution-showcase">
+                        <div class="solution-item">
+                            <i class="fas fa-network-wired"></i>
+                            <h4>Dağıtık Ağ</h4>
+                            <p>Binlerce node üzerinde dağıtık olarak barındırılır</p>
+                        </div>
+                        <div class="solution-item">
+                            <i class="fas fa-lock"></i>
+                            <h4>Kriptografik Güvenlik</h4>
+                            <p>Hash tabanlı adreslemeli dosya sistemi</p>
+                        </div>
+                        <div class="solution-item">
+                            <i class="fas fa-infinity"></i>
+                            <h4>Kalıcı Depolama</h4>
+                            <p>Bir kez yüklendiğinde sonsuza kadar saklanır</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kullandığımız Teknolojiler</h2>
+                <p>En gelişmiş merkezi olmayan teknolojilerle web sitenizi koruyoruz</p>
+            </div>
+            
+            <div class="tech-solutions">
+                <div class="tech-solution featured">
+                    <div class="tech-header">
+                        <div class="tech-logo">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h3>IPFS (InterPlanetary File System)</h3>
+                        <div class="tech-badge">En Popüler</div>
+                    </div>
+                    <div class="tech-content">
+                        <p>Content-addressed, peer-to-peer distributed file system. Web sitenizi binlerce node üzerinde dağıtık olarak saklar.</p>
+                        <div class="tech-features">
+                            <div class="feature-list">
+                                <div class="feature"><i class="fas fa-check"></i> İçerik tabanlı adresleme</div>
+                                <div class="feature"><i class="fas fa-check"></i> Otomatik deduplication</div>
+                                <div class="feature"><i class="fas fa-check"></i> Sürüm kontrolü</div>
+                                <div class="feature"><i class="fas fa-check"></i> Hızlı senkronizasyon</div>
+                                <div class="feature"><i class="fas fa-check"></i> Gateway desteği</div>
+                            </div>
+                        </div>
+                        <div class="tech-stats">
+                            <div class="stat">
+                                <span class="stat-number">200K+</span>
+                                <span class="stat-label">Active Nodes</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">99.9%</span>
+                                <span class="stat-label">Uptime</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-solution">
+                    <div class="tech-header">
+                        <div class="tech-logo">
+                            <i class="fas fa-archive"></i>
+                        </div>
+                        <h3>Arweave Permanent Storage</h3>
+                    </div>
+                    <div class="tech-content">
+                        <p>Blockchain tabanlı kalıcı veri depolama çözümü. Tek ödeme ile verileriniz sonsuza kadar saklanır.</p>
+                        <div class="tech-features">
+                            <div class="feature-list">
+                                <div class="feature"><i class="fas fa-check"></i> 200 yıl+ garanti</div>
+                                <div class="feature"><i class="fas fa-check"></i> Tek seferlik ödeme</div>
+                                <div class="feature"><i class="fas fa-check"></i> Immutable storage</div>
+                                <div class="feature"><i class="fas fa-check"></i> Smart contract entegrasyonu</div>
+                                <div class="feature"><i class="fas fa-check"></i> Proof of access</div>
+                            </div>
+                        </div>
+                        <div class="tech-pricing">
+                            <span class="price">~$5</span>
+                            <span class="price-unit">per GB (lifetime)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-solution">
+                    <div class="tech-header">
+                        <div class="tech-logo">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <h3>Tor Hidden Services</h3>
+                    </div>
+                    <div class="tech-content">
+                        <p>Onion routing ile tamamen anonim ve sansüre dayanıklı web siteleri. .onion domain ile erişim.</p>
+                        <div class="tech-features">
+                            <div class="feature-list">
+                                <div class="feature"><i class="fas fa-check"></i> End-to-end şifreleme</div>
+                                <div class="feature"><i class="fas fa-check"></i> IP gizleme</div>
+                                <div class="feature"><i class="fas fa-check"></i> Çok katmanlı routing</div>
+                                <div class="feature"><i class="fas fa-check"></i> .onion domain</div>
+                                <div class="feature"><i class="fas fa-check"></i> Tam anonimlik</div>
+                            </div>
+                        </div>
+                        <div class="tech-usage">
+                            <span class="usage-stat">2M+ daily users</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-solution">
+                    <div class="tech-header">
+                        <div class="tech-logo">
+                            <i class="fas fa-satellite"></i>
+                        </div>
+                        <h3>Skynet by Sia</h3>
+                    </div>
+                    <div class="tech-content">
+                        <p>Merkezi olmayan content delivery network. Hızlı erişim ve yüksek available ile web sitenizi sunar.</p>
+                        <div class="tech-features">
+                            <div class="feature-list">
+                                <div class="feature"><i class="fas fa-check"></i> CDN performansı</div>
+                                <div class="feature"><i class="fas fa-check"></i> Portability</div>
+                                <div class="feature"><i class="fas fa-check"></i> Developer-friendly API</div>
+                                <div class="feature"><i class="fas fa-check"></i> Skylink addressing</div>
+                                <div class="feature"><i class="fas fa-check"></i> Backup & redundancy</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-solution">
+                    <div class="tech-header">
+                        <div class="tech-logo">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Filecoin Storage</h3>
+                    </div>
+                    <div class="tech-content">
+                        <p>IPFS üzerine kurulu incentivized storage network. Dosyalarınızın kalıcı saklanmasını garanti eder.</p>
+                        <div class="tech-features">
+                            <div class="feature-list">
+                                <div class="feature"><i class="fas fa-check"></i> Incentivized hosting</div>
+                                <div class="feature"><i class="fas fa-check"></i> Proof of storage</div>
+                                <div class="feature"><i class="fas fa-check"></i> Competitive pricing</div>
+                                <div class="feature"><i class="fas fa-check"></i> Smart contracts</div>
+                                <div class="feature"><i class="fas fa-check"></i> Global network</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-solution">
+                    <div class="tech-header">
+                        <div class="tech-logo">
+                            <i class="fas fa-broadcast-tower"></i>
+                        </div>
+                        <h3>Gun.js P2P Database</h3>
+                    </div>
+                    <div class="tech-content">
+                        <p>Peer-to-peer, realtime, distributed database. Dinamik içerik için merkezi olmayan backend.</p>
+                        <div class="tech-features">
+                            <div class="feature-list">
+                                <div class="feature"><i class="fas fa-check"></i> Realtime sync</div>
+                                <div class="feature"><i class="fas fa-check"></i> Offline-first</div>
+                                <div class="feature"><i class="fas fa-check"></i> End-to-end encryption</div>
+                                <div class="feature"><i class="fas fa-check"></i> Graph database</div>
+                                <div class="feature"><i class="fas fa-check"></i> Mesh networking</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Types -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sansüre Dayanıklı Website Türleri</h2>
+                <p>Her türde web sitesi için uygun çözümlerimiz bulunmaktadır</p>
+            </div>
+            
+            <div class="website-types">
+                <div class="website-type">
+                    <div class="type-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3>Haber & Blog Siteleri</h3>
+                    <p>Sansüre dayanıklı haber portalları ve blog siteleri oluşturun</p>
+                    <div class="type-features">
+                        <span class="feature-tag">IPFS Hosting</span>
+                        <span class="feature-tag">Tor Mirror</span>
+                        <span class="feature-tag">CDN</span>
+                    </div>
+                    <div class="use-cases">
+                        <h5>Kimler Kullanır:</h5>
+                        <ul>
+                            <li>Bağımsız gazeteciler</li>
+                            <li>Aktivist grupları</li>
+                            <li>Düşünce kuruluşları</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="website-type">
+                    <div class="type-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Forum & Sosyal Platformlar</h3>
+                    <p>Merkezi olmayan tartışma platformları ve sosyal ağlar</p>
+                    <div class="type-features">
+                        <span class="feature-tag">P2P Database</span>
+                        <span class="feature-tag">Real-time</span>
+                        <span class="feature-tag">Encrypted</span>
+                    </div>
+                    <div class="use-cases">
+                        <h5>Kimler Kullanır:</h5>
+                        <ul>
+                            <li>İfade özgürlüğü savunucuları</li>
+                            <li>Niche topluluklar</li>
+                            <li>Whistleblower platformları</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="website-type">
+                    <div class="type-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Eğitim & Dokümantasyon</h3>
+                    <p>Bilgi paylaşım platformları ve eğitim materyalleri</p>
+                    <div class="type-features">
+                        <span class="feature-tag">Permanent Storage</span>
+                        <span class="feature-tag">Version Control</span>
+                        <span class="feature-tag">Search</span>
+                    </div>
+                    <div class="use-cases">
+                        <h5>Kimler Kullanır:</h5>
+                        <ul>
+                            <li>Eğitim kurumları</li>
+                            <li>Araştırmacılar</li>
+                            <li>Open source projeler</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="website-type">
+                    <div class="type-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-ticaret Platformları</h3>
+                    <p>Kripto para ile çalışan merkezi olmayan mağazalar</p>
+                    <div class="type-features">
+                        <span class="feature-tag">Crypto Payments</span>
+                        <span class="feature-tag">Smart Contracts</span>
+                        <span class="feature-tag">Escrow</span>
+                    </div>
+                    <div class="use-cases">
+                        <h5>Kimler Kullanır:</h5>
+                        <ul>
+                            <li>Kripto ticareti yapanlar</li>
+                            <li>Sansür riski olan ürünler</li>
+                            <li>Privacy-focused brands</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="website-type">
+                    <div class="type-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Doküman & Dosya Paylaşımı</h3>
+                    <p>Güvenli dosya paylaşımı ve döküman arşivleme sistemleri</p>
+                    <div class="type-features">
+                        <span class="feature-tag">File Storage</span>
+                        <span class="feature-tag">Access Control</span>
+                        <span class="feature-tag">Redundancy</span>
+                    </div>
+                    <div class="use-cases">
+                        <h5>Kimler Kullanır:</h5>
+                        <ul>
+                            <li>Medya kuruluşları</li>
+                            <li>Hukuk büroları</li>
+                            <li>Şeffaflık organizasyonları</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="website-type">
+                    <div class="type-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Topluluk & Organizasyon</h3>
+                    <p>Merkezi olmayan organizasyon ve topluluk yönetim platformları</p>
+                    <div class="type-features">
+                        <span class="feature-tag">DAO Integration</span>
+                        <span class="feature-tag">Voting Systems</span>
+                        <span class="feature-tag">Governance</span>
+                    </div>
+                    <div class="use-cases">
+                        <h5>Kimler Kullanır:</h5>
+                        <ul>
+                            <li>DAO'lar</li>
+                            <li>Sivil toplum kuruluşları</li>
+                            <li>Siyasi organizasyonlar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Process -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sansüre Dayanıklı Website Kurulum Süreci</h2>
+                <p>Web sitenizi sansüre dayanıklı hale getirme adımlarımız</p>
+            </div>
+            
+            <div class="implementation-process">
+                <div class="process-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">1</div>
+                        <h3>Analiz & Planlama</h3>
+                    </div>
+                    <div class="phase-content">
+                        <div class="phase-steps">
+                            <div class="step">
+                                <i class="fas fa-search"></i>
+                                <div>
+                                    <h5>İhtiyaç Analizi</h5>
+                                    <p>Web sitenizin türü, trafiği ve gereksinimlerini analiz ediyoruz</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <h5>Tehdit Değerlendirmesi</h5>
+                                    <p>Karşılaşabileceğiniz sansür türlerini ve risklerini değerlendiriyoruz</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <i class="fas fa-cogs"></i>
+                                <div>
+                                    <h5>Teknoloji Seçimi</h5>
+                                    <p>İhtiyaçlarınıza en uygun merkezi olmayan teknolojileri seçiyoruz</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">2</div>
+                        <h3>Altyapı Kurulumu</h3>
+                    </div>
+                    <div class="phase-content">
+                        <div class="phase-steps">
+                            <div class="step">
+                                <i class="fas fa-cube"></i>
+                                <div>
+                                    <h5>IPFS Node Kurulumu</h5>
+                                    <p>IPFS node'larını kurarak dağıtık hosting altyapısını hazırlıyoruz</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <i class="fas fa-network-wired"></i>
+                                <div>
+                                    <h5>Gateway Konfigürasyonu</h5>
+                                    <p>Geleneksel web ile uyumluluk için gateway'leri yapılandırıyoruz</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <i class="fas fa-user-secret"></i>
+                                <div>
+                                    <h5>Tor Hidden Service</h5>
+                                    <p>.onion adresi ile Tor ağında erişilebilir hale getiriyoruz</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">3</div>
+                        <h3>İçerik Migrasyonu</h3>
+                    </div>
+                    <div class="phase-content">
+                        <div class="phase-steps">
+                            <div class="step">
+                                <i class="fas fa-download"></i>
+                                <div>
+                                    <h5>İçerik Hazırlama</h5>
+                                    <p>Mevcut web sitenizi merkezi olmayan hosting için optimize ediyoruz</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <i class="fas fa-upload"></i>
+                                <div>
+                                    <h5>IPFS'e Yükleme</h5>
+                                    <p>Web sitenizi IPFS ağına yükleyerek hash adresini oluşturuyoruz</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <i class="fas fa-link"></i>
+                                <div>
+                                    <h5>Domain Bağlama</h5>
+                                    <p>ENS veya diğer Web3 domain'leri IPFS hash'inize bağlıyoruz</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">4</div>
+                        <h3>Test & Optimizasyon</h3>
+                    </div>
+                    <div class="phase-content">
+                        <div class="phase-steps">
+                            <div class="step">
+                                <i class="fas fa-vial"></i>
+                                <div>
+                                    <h5>Erişim Testleri</h5>
+                                    <p>Farklı ağlardan ve tarayıcılardan erişim testleri yapıyoruz</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <div>
+                                    <h5>Performans Optimizasyonu</h5>
+                                    <p>Yükleme hızını artırmak için içerikleri optimize ediyoruz</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <i class="fas fa-sync"></i>
+                                <div>
+                                    <h5>Redundancy Kurulumu</h5>
+                                    <p>Birden fazla storage provider kullanarak yedeklilik sağlıyoruz</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">5</div>
+                        <h3>Devreye Alma & Eğitim</h3>
+                    </div>
+                    <div class="phase-content">
+                        <div class="phase-steps">
+                            <div class="step">
+                                <i class="fas fa-rocket"></i>
+                                <div>
+                                    <h5>Go-Live</h5>
+                                    <p>Web sitenizi canlı ortamda devreye alıyoruz</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h5>Kullanıcı Eğitimi</h5>
+                                    <p>Web sitenizin yönetimi konusunda detaylı eğitim veriyoruz</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <i class="fas fa-headset"></i>
+                                <div>
+                                    <h5>Sürekli Destek</h5>
+                                    <p>7/24 teknik destek ve izleme hizmeti sağlıyoruz</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sansüre Dayanıklı Website Paketlerimiz</h2>
+                <p>İhtiyacınıza uygun paketi seçin ve sansüre dayanıklı hale gelin</p>
+            </div>
+            
+            <div class="censorship-pricing">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Temel Koruma</h3>
+                        <div class="price">
+                            <span class="currency">₺</span>
+                            <span class="amount">2,500</span>
+                        </div>
+                        <div class="price-note">Küçük statik siteler için</div>
+                    </div>
+                    <div class="pricing-content">
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> IPFS hosting kurulumu</li>
+                            <li><i class="fas fa-check"></i> 3 gateway bağlantısı</li>
+                            <li><i class="fas fa-check"></i> ENS domain bağlama</li>
+                            <li><i class="fas fa-check"></i> Temel optimizasyon</li>
+                            <li><i class="fas fa-check"></i> 30 gün destek</li>
+                            <li><i class="fas fa-times opacity-50"></i> Tor hidden service</li>
+                            <li><i class="fas fa-times opacity-50"></i> Dinamik içerik</li>
+                        </ul>
+                        <div class="suitable-for">
+                            <h5>Kimler İçin Uygun:</h5>
+                            <p>Kişisel bloglar, basit kurumsal siteler, portfolyo siteleri</p>
+                        </div>
+                        <a href="index.html#contact" class="pricing-btn">Paket Seç</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">En Popüler</div>
+                    <div class="pricing-header">
+                        <h3>Tam Koruma</h3>
+                        <div class="price">
+                            <span class="currency">₺</span>
+                            <span class="amount">5,500</span>
+                        </div>
+                        <div class="price-note">Dinamik siteler için</div>
+                    </div>
+                    <div class="pricing-content">
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Tüm Temel Koruma özellikleri</li>
+                            <li><i class="fas fa-check"></i> Tor hidden service kurulumu</li>
+                            <li><i class="fas fa-check"></i> P2P database entegrasyonu</li>
+                            <li><i class="fas fa-check"></i> 5 farklı gateway</li>
+                            <li><i class="fas fa-check"></i> Arweave permanent backup</li>
+                            <li><i class="fas fa-check"></i> Auto-update sistemi</li>
+                            <li><i class="fas fa-check"></i> 90 gün destek</li>
+                        </ul>
+                        <div class="suitable-for">
+                            <h5>Kimler İçin Uygun:</h5>
+                            <p>Haber siteleri, forumlar, e-ticaret, sosyal platformlar</p>
+                        </div>
+                        <a href="index.html#contact" class="pricing-btn">Paket Seç</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Kurumsal Koruma</h3>
+                        <div class="price">
+                            <span class="currency">₺</span>
+                            <span class="amount">12,000</span>
+                        </div>
+                        <div class="price-note">Yüksek riskli siteler için</div>
+                    </div>
+                    <div class="pricing-content">
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Tüm Tam Koruma özellikleri</li>
+                            <li><i class="fas fa-check"></i> Özel IPFS node kurulumu</li>
+                            <li><i class="fas fa-check"></i> Multi-blockchain storage</li>
+                            <li><i class="fas fa-check"></i> DDoS koruma sistemleri</li>
+                            <li><i class="fas fa-check"></i> 24/7 izleme & alerting</li>
+                            <li><i class="fas fa-check"></i> Özel güvenlik önlemleri</li>
+                            <li><i class="fas fa-check"></i> 1 yıl tam destek</li>
+                        </ul>
+                        <div class="suitable-for">
+                            <h5>Kimler İçin Uygun:</h5>
+                            <p>Medya kuruluşları, aktivist siteler, whistleblower platformları</p>
+                        </div>
+                        <a href="index.html#contact" class="pricing-btn">İletişime Geç</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-note">
+                <p><i class="fas fa-info-circle"></i> Tüm paketlere hosting ve storage maliyetleri dahil değildir. IPFS pinning (~$5-20/ay), Arweave storage (~$5/GB lifetime) ve diğer maliyetler ayrıca hesaplanır.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Features -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Güvenlik Özellikleri</h2>
+                <p>Çoklu katmanlı güvenlik ile web sitenizi maksimum düzeyde koruyoruz</p>
+            </div>
+            
+            <div class="security-features">
+                <div class="security-category">
+                    <h3><i class="fas fa-network-wired"></i> Network Security</h3>
+                    <div class="security-items">
+                        <div class="security-item">
+                            <i class="fas fa-shield-virus"></i>
+                            <div>
+                                <h5>DDoS Koruması</h5>
+                                <p>Dağıtık mimari sayesinde DDoS saldırılarına dayanıklı</p>
+                            </div>
+                        </div>
+                        <div class="security-item">
+                            <i class="fas fa-user-secret"></i>
+                            <div>
+                                <h5>Onion Routing</h5>
+                                <p>Tor ağı üzerinden çok katmanlı şifreleme</p>
+                            </div>
+                        </div>
+                        <div class="security-item">
+                            <i class="fas fa-eye-slash"></i>
+                            <div>
+                                <h5>IP Gizleme</h5>
+                                <p>Gerçek IP adresiniz gizlenerek kimlik korunması</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="security-category">
+                    <h3><i class="fas fa-lock"></i> Data Security</h3>
+                    <div class="security-items">
+                        <div class="security-item">
+                            <i class="fas fa-fingerprint"></i>
+                            <div>
+                                <h5>Content Addressing</h5>
+                                <p>Hash tabanlı dosya doğrulaması ve bütünlük kontrolü</p>
+                            </div>
+                        </div>
+                        <div class="security-item">
+                            <i class="fas fa-key"></i>
+                            <div>
+                                <h5>End-to-End Encryption</h5>
+                                <p>Uçtan uca şifreleme ile veri gizliliği</p>
+                            </div>
+                        </div>
+                        <div class="security-item">
+                            <i class="fas fa-copy"></i>
+                            <div>
+                                <h5>Redundant Storage</h5>
+                                <p>Birden fazla node'da çoklu kopyalama</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="security-category">
+                    <h3><i class="fas fa-cogs"></i> Operational Security</h3>
+                    <div class="security-items">
+                        <div class="security-item">
+                            <i class="fas fa-history"></i>
+                            <div>
+                                <h5>Immutable History</h5>
+                                <p>Değiştirilemez sürüm geçmişi ve audit trail</p>
+                            </div>
+                        </div>
+                        <div class="security-item">
+                            <i class="fas fa-robot"></i>
+                            <div>
+                                <h5>Automated Backups</h5>
+                                <p>Otomatik yedekleme ve geri yükleme sistemleri</p>
+                            </div>
+                        </div>
+                        <div class="security-item">
+                            <i class="fas fa-bell"></i>
+                            <div>
+                                <h5>Real-time Monitoring</h5>
+                                <p>7/24 izleme ve anında uyarı sistemleri</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Web Sitenizi Sansüre Dayanıklı Hale Getirin</h2>
+                <p>Uzman ekibimizle merkezi olmayan teknolojilerin gücünden yararlanın ve hiçbir gücün engelleyemeyeceği bir web varlığı oluşturun</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="btn-primary">Ücretsiz Değerlendirme</a>
+                    <a href="tel:+90xxxxxxxxx" class="btn-secondary">
+                        <i class="fas fa-phone"></i> Acil Destek Hattı
+                    </a>
+                </div>
+                <div class="cta-features">
+                    <div class="feature"><i class="fas fa-clock"></i> 24 saat içinde kurulum</div>
+                    <div class="feature"><i class="fas fa-shield-alt"></i> %100 sansür koruması</div>
+                    <div class="feature"><i class="fas fa-infinity"></i> Sınırsız uptime</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DTC<span class="highlight">.service</span></h3>
+                    <p>Gelecek teknolojiler için profesyonel danışmanlık hizmetleri.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hizmetler</h4>
+                    <ul>
+                        <li><a href="rpa.html">RPA Otomasyonu</a></li>
+                        <li><a href="ai.html">AI Otomasyonu</a></li>
+                        <li><a href="web3-domains.html">Web3 Domain</a></li>
+                        <li><a href="censorship-resistant.html">Sansüre Dayanıklı Website</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-envelope"></i> info@dtcservice.x</p>
+                    <p><i class="fas fa-phone"></i> +90 XXX XXX XX XX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DTC Service. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
