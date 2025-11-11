@@ -1,0 +1,33 @@
+name: Notify webhook on push
+
+on:
+  push:
+    branches:
+      - "**"
+
+jobs:
+  send-webhook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send push payload to webhook
+        env:
+          WEBHOOK_URL: https://7bafc0dc71dc.ngrok-free.app/webhook/e0868a72-0a30-4b79-8cf9-d18cf9dbddbd
+          GITHUB_SHA: ${{ github.sha }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_REF: ${{ github.ref }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+          GITHUB_ACTOR: ${{ github.actor }}
+        run: |
+          set -e
+          echo "Posting push event to webhook: $WEBHOOK_URL"
+          payload=$(jq -n \
+            --arg repo "$GITHUB_REPOSITORY" \
+            --arg sha "$GITHUB_SHA" \
+            --arg ref "$GITHUB_REF" \
+            --arg event "$GITHUB_EVENT_NAME" \
+            --arg actor "$GITHUB_ACTOR" \
+            '{repository: $repo, sha: $sha, ref: $ref, event: $event, actor: $actor, source: "github-actions"}')
+          curl -sS -X POST "$WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -d "$payload" \
+            -o /dev/stderr -w "HTTP %{http_code}\n"
